@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sensei Labs Hackaton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top col-12">
+        <a class="navbar-brand" href="#">
+            <img src="img/logos/logoSensei.png" title="Sensei Labs logo" alt="Sensei Labs">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Work-Shop <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Conductor <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tasks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Academy</a>
+                </li>
+            </ul>
+            <div class="nav-cart-container dropdown col-lg-4 col-12">
+                <button id="cart-button" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Cart
+                </button>
+                <div id="cart-itens" class="dropdown-menu col-12" aria-labelledby="dropdownMenuButton">
+                    <div id="cart-list" class="cart-list">
+
+                    </div>
+                    <div id="cart-total">
+
+                    </div>
+                    <div class="cart-go-button-container">
+                        <button class="btn btn-primary cart-go-button" type="button">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="shopWodget-container container" role="main">
+
+        <div class="row">
+
+            <div class="col-12">
+                <button class="btn btn-primary d-block d-md-none" type="button" data-toggle="collapse"
+                    data-target="#shopWidget-sidebar" aria-expanded="false" aria-controls="shopWidget-sidebar">
+                    Button with data-target
+                </button>
+            </div>
+
+
+            <div id="shopWidget-sidebar" class="shopWidget-sidebar-container collapse show col-12 col-md-3">
+
+
+                <h2 class="shopWidget-sidebar__filterTitle">Filters:</h2>
+                <form id="shopWidget-filterForm">
+                    <div id="form-group-category" class="form-group">
+                        <h3>Sector:</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="role" value="HR" id="hr-check">
+                            <label class="form-check-label" for="hr_check">
+                                HR
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="role" value="Development"
+                                id="dev-check">
+                            <label class="form-check-label" for="dev-check">
+                                Development
+                            </label>
+                        </div>
+                    </div>
+                    <div id="form-group-dev" class="form-group">
+                        <h3>Skills:</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="role" value="Full-stack developer"
+                                id="full-check">
+                            <label class="form-check-label" for="full-check">
+                                Full-stack
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="role" value="Back-end developer"
+                                id="back-check">
+                            <label class="form-check-label" for="back-check">
+                                Back-end
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="role" value="Front-end developer"
+                                id="front-check">
+                            <label class="form-check-label" for="front-check">
+                                Front-end
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="recruiter-check">
+                            <label class="form-check-label" for="recruiter-check">
+                                Recruiter
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="resources-check">
+                            <label class="form-check-label" for="resources-check">
+                                Resources Management
+                            </label>
+                        </div>
+                    </div>
+                    <div id="form-group-level" class="form-group">
+                        <h3>Skills:</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="level" value="l1" id="lOne-check">
+                            <label class="form-check-label" for="lOne-check">
+                                L1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="level" value="l2" id="lTwo-check">
+                            <label class="form-check-label" for="lTwo-check">
+                                L2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="level" value="l3" id="lThree-check">
+                            <label class="form-check-label" for="lThree-check">
+                                L3
+                            </label>
+                        </div>
+                    </div>
+                    <div id="form-group-rating" class="form-group">
+                        <h3>Rating:</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="rating" value="1" id="oneStar-check">
+                            <label class="form-check-label" for="oneStar-check">
+                                1 star
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="rating" value="2" id="twoStar-check">
+                            <label class="form-check-label" for="twoStar-check">
+                                2 star
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="rating" value="3"
+                                id="threeStar-check">
+                            <label class="form-check-label" for="threeStar-check">
+                                3 star
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="rating" value="4" id="fourStar-check">
+                            <label class="form-check-label" for="fourStar-check">
+                                4 star
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="rating" value="5" id="fiveStar-check">
+                            <label class="form-check-label" for="fiveStar-check">
+                                5 star
+                            </label>
+                        </div>
+                    </div>
+                    <div id="form-group-date" class="form-group">
+                        <h3>Available dates:</h3>
+                        <div class="input-group date row" data-provide="datepicker">
+                            <h4 class="col-12">Start:</h4>
+                            <div class="col-12">
+                                <input id="dateStartInput" type="text" class="form-control">
+                                <div class="input-group-addon">
+                                    <span class="glyphicon glyphicon-th"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="input-group date row" data-provide="datepicker">
+                            <h4 class="col-12">End:</h4>
+                            <div class="col-12">
+                                <input id="dateEndInput" type="text" class="form-control">
+                                <div class="input-group-addon">
+                                    <span class="glyphicon glyphicon-th"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="shopWidget-products-container col-12 col-md-9">
+                <div class="card-columns">
+                    <div class="card">
+                        <img class="card-img-top" src="img/personLogo.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Erik</h5>
+                            <p class="card-text">Full-stack</p>
+                            <p class="card-text"><small class="text-muted">$50/hour</small></p>
+                            <a href="#" class="btn btn-primary card-add-button">Add to list</a>
+                            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#modal1">More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shopWidget-products-modals col-12">
+                <div id="modal1" class="modal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Modal body text goes here.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+
+    </main>
+
+    <div id="loading-spinner-mask">
+        <div class="spinner-grow text-light" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- test -->
+
+</body>
+
+<script src="scripts/scriptLoader.js"></script>
+
+</html>
