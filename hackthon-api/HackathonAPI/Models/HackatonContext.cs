@@ -10,5 +10,6 @@ namespace HackathonAPI.Models
         }
 
         public DbSet<Talent> Talents {get;set;}
+        public DbSet<Cart> Cart {get;set;}
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace HackathonAPI.Models
 {
@@ -18,5 +19,11 @@ namespace HackathonAPI.Models
         public int ID {get;set;}
         public DateTime StartDate {get;set;}
         public DateTime EndDate {get;set;}
+    }
+
+    public class Cart
+    {
+        public int ID {get;set;}
+        public IList<Talent> Talents{get;set;}
     }
 }

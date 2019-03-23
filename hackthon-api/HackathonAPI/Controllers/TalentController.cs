@@ -43,11 +43,10 @@ namespace HackathonAPI.Controllers
         }
         
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Talent>>> GetTalents()
+        public async Task<ActionResult<IEnumerable<Talent>>> GetAllTalents()
         {
             return await _context.Talents.ToListAsync();
         }
-
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Talent>> GetTalent(int id)
@@ -60,6 +59,45 @@ namespace HackathonAPI.Controllers
             return talent;
         }
 
-        // Create methods for filters
+        // [HttpGet("{id}")]
+        // public async Task<ActionResult<Talent>> GetTalent(string role, string level, int rating)
+        // {
+        //     var talent = await _context.Talents.Select()
+
+        //     if (talent != null)
+        //         return NotFound();
+
+        //     return talent;
+        // }
+
+        [HttpPost]
+        public async Task<ActionResult<Cart>> AddToCart(Talent talent)
+        {
+            var cart = await _context.Cart.FirstAsync();
+
+            if(cart is null)
+                cart = new Cart() {ID=1, Talents = new List<Talent>()};
+
+            cart.Talents.Add(talent);
+
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetTalent), new {ID = talent.ID}, talent);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> RemoveFromCart(int id)
+        {
+            var talent = await _context.Talents.FindAsync(id);
+            var cart = await _context.Cart.FirstAsync();
+
+            if(talent == null || cart == null)
+                return NotFound();
+
+            cart.Talents.Remove(talent);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
     }
 }
