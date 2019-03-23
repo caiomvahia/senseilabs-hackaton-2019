@@ -1,0 +1,14 @@
+C:\Users\Cesar\OneDrive\Profissional\Vanhack\sensei\Hackathon Solution\senseilabs-hackaton-2019\hackthon-api\HackathonAPI\bin\Debug\netcoreapp2.2\HackathonAPI.deps.json
+C:\Users\Cesar\OneDrive\Profissional\Vanhack\sensei\Hackathon Solution\senseilabs-hackaton-2019\hackthon-api\HackathonAPI\bin\Debug\netcoreapp2.2\HackathonAPI.runtimeconfig.json
+C:\Users\Cesar\OneDrive\Profissional\Vanhack\sensei\Hackathon Solution\senseilabs-hackaton-2019\hackthon-api\HackathonAPI\bin\Debug\netcoreapp2.2\HackathonAPI.runtimeconfig.dev.json
+c:\Users\Cesar\OneDrive\Profissional\Vanhack\sensei\Hackathon Solution\senseilabs-hackaton-2019\hackthon-api\HackathonAPI\bin\Debug\netcoreapp2.2\HackathonAPI.dll
+c:\Users\Cesar\OneDrive\Profissional\Vanhack\sensei\Hackathon Solution\senseilabs-hackaton-2019\hackthon-api\HackathonAPI\bin\Debug\netcoreapp2.2\HackathonAPI.pdb
+c:\Users\Cesar\OneDrive\Profissional\Vanhack\sensei\Hackathon Solution\senseilabs-hackaton-2019\hackthon-api\HackathonAPI\obj\Debug\netcoreapp2.2\HackathonAPI.csprojAssemblyReference.cache
+c:\Users\Cesar\OneDrive\Profissional\Vanhack\sensei\Hackathon Solution\senseilabs-hackaton-2019\hackthon-api\HackathonAPI\obj\Debug\netcoreapp2.2\HackathonAPI.csproj.CoreCompileInputs.cache
+c:\Users\Cesar\OneDrive\Profissional\Vanhack\sensei\Hackathon Solution\senseilabs-hackaton-2019\hackthon-api\HackathonAPI\obj\Debug\netcoreapp2.2\HackathonAPI.RazorAssemblyInfo.cache
+c:\Users\Cesar\OneDrive\Profissional\Vanhack\sensei\Hackathon Solution\senseilabs-hackaton-2019\hackthon-api\HackathonAPI\obj\Debug\netcoreapp2.2\HackathonAPI.RazorAssemblyInfo.cs
+c:\Users\Cesar\OneDrive\Profissional\Vanhack\sensei\Hackathon Solution\senseilabs-hackaton-2019\hackthon-api\HackathonAPI\obj\Debug\netcoreapp2.2\HackathonAPI.AssemblyInfoInputs.cache
+c:\Users\Cesar\OneDrive\Profissional\Vanhack\sensei\Hackathon Solution\senseilabs-hackaton-2019\hackthon-api\HackathonAPI\obj\Debug\netcoreapp2.2\HackathonAPI.AssemblyInfo.cs
+c:\Users\Cesar\OneDrive\Profissional\Vanhack\sensei\Hackathon Solution\senseilabs-hackaton-2019\hackthon-api\HackathonAPI\obj\Debug\netcoreapp2.2\HackathonAPI.RazorTargetAssemblyInfo.cache
+c:\Users\Cesar\OneDrive\Profissional\Vanhack\sensei\Hackathon Solution\senseilabs-hackaton-2019\hackthon-api\HackathonAPI\obj\Debug\netcoreapp2.2\HackathonAPI.dll
+c:\Users\Cesar\OneDrive\Profissional\Vanhack\sensei\Hackathon Solution\senseilabs-hackaton-2019\hackthon-api\HackathonAPI\obj\Debug\netcoreapp2.2\HackathonAPI.pdb
