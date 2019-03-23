@@ -18,11 +18,23 @@ namespace HackathonAPI
 
         public IConfiguration Configuration { get; }
 
+        readonly string _allowSpecificOrigins = "_vanhackathonAllowSpecificOrigins";
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<HackathonAPIContext>(opt => opt.UseInMemoryDatabase("TalentList"));
-            services.AddCors();
+            services.AddCors(options =>
+            {
+                options.AddPolicy(_allowSpecificOrigins,
+                builder =>
+                {
+                    builder.WithOrigins("http://senseiapi-env-1.xwdtgphpy3.sa-east-1.elasticbeanstalk.com")
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
+                });
+            });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -39,6 +51,7 @@ namespace HackathonAPI
                 app.UseHsts();
             }
 
+            app.UseCors();
             app.UseHttpsRedirection();
             app.UseMvc();
         }
