@@ -1,0 +1,119 @@
+@import "./variables.less";
+@import (inline) "./bootstrap.min.css";
+@import (inline) "./bootstrap-datepicker3.min.css";
+
+h3,
+h4,
+h5 {
+    font-size: 16px;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding-top: @topBarHeight;
+}
+
+.navbar {
+
+    .navbar-brand {
+        img {
+            width: auto;
+            height: @topBarHeight;
+        }
+    }
+
+    .nav-cart-container {
+
+        .dropdown-toggle {
+            width: 100%;
+        }
+
+        .dropdown-menu {
+            //width: 100%;
+
+            .cart-list {
+                .dropdown-item {
+                    cursor: pointer;
+                    position: relative;
+                    border-radius: @borderRadius;
+
+                    &:hover {
+
+                        &:after {
+                            position: absolute;
+                            right: 0;
+                            content: "Remove?";
+                            padding-right: 0.5rem;
+                        }
+                    }
+                }
+            }
+
+
+            .card-total-divider {
+                background: @backgroundDark;
+                border-top: 1px solid @dividerColor;
+                margin: 0;
+            }
+
+            .cart-go-button-container {
+                padding: 1rem;
+
+                .cart-go-button {
+
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+}
+
+.shopWodget-container {
+
+    height: 100%;
+    width: 100%;
+
+    .shopWidget-products-container {
+        background: @backgroundLight;
+
+        .card {
+            .card-img-top {
+                height: auto;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+        }
+    }
+
+    .shopWidget-sidebar-container {
+        background: @backgroundDark;
+        height: 100%;
+
+
+        @media (min-width: @md-breakpoint) {
+            display: block;
+        }
+
+    }
+}
+
+#loading-spinner-mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    top: 0;
+    display: none;
+
+    .spinner-grow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+}
